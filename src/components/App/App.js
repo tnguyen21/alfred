@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
+import Summary from "../Summary/Summary";
+import UserInput from "../UserInput/UserInput";
+
+export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -17,9 +19,11 @@ function App() {
         >
           Learn React
         </a>
+        <p>add some contet</p>
       </header>
+
+      <Summary />
+      <UserInput />
     </div>
   );
 }
-
-export default App;
