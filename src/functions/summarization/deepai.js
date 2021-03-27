@@ -1,25 +1,11 @@
-const axios = require("axios");
+const deepai = require("deepai");
 
-const options = {
-  method: "GET",
-  url:
-    "hthttp://max-text-summarizer.codait-prod-41208c73af8fca213512856c7a09db52-0000.us-east.containers.appdomain.cloud/swagger.json",
-  params: {
-    title: "Batman at his best and beyond",
+deepai.setApiKey("quickstart-QUdJIGlzIGNvbWluZy4uLi4K");
+
+(async function () {
+  var resp = await deepai.callStandardApi("summarization", {
     text:
       "Batman has always been my favourite superhero ever since the first time I heard about him because he his human with no powers, also he is much more questionable than any other superhero. The story of the film is about Batman, Lieutenant James Gordon, and new district attorney Harvey Dent beginning to succeed in rounding up the criminals that plague Gotham City. They are unexpectedly challenged when a mysterious criminal mastermind known as the Joker appears in Gotham. Batman's struggle against the Joker becomes deeply personal, forcing him to \"confront everything he believes\" and to improve his technology (which introduces the recreation of the Batcycle, known as the Batpod and the Batsuit was redesigned) to stop the madman's campaign of destruction. During the course of the film, a love triangle develops between Bruce Wayne, Dent and Rachel Dawes.  There are now six Batman films and I must say that The Dark Knight is the best out of all of them. The title is good because that is what Batman actually is. It has been 3 years for the adventure to continue from Batman Begins but that entire wait was worth it. Gotham city is very Gothic looking and is very haunting and visionary. The whole movie is charged with pulse-pounding suspense, ingenious special effects and riveting performances from a first-rate cast especially from Heath Ledger who gave an Oscar nomination performance for best supporting-actor. It is a shame that he can't see his terrific work on-screen. The cinematography is excellent which is made so dark & sinister that really did suit the mood for the film. Usually sequels don't turn out to be better than the original but The Dark Knight is one of those rare sequels that surpasses the original like The Godfather 2. I also really liked the poster where the building is on fire in a Bat symbol & Batman is standing in front of it. Christopher Nolan is a brilliant director and his film Memento is one of my most favourite films. He hasn't made 10 movies yet and 3 of them are already on the IMDb top 250. Overall The Dark Knight is the kind of movie that will make the audience cheer in the end instead of throwing fruit & vegetables on the screen.",
-  },
-  headers: {
-    "X-AYLIEN-NewsAPI-Application-ID": "8321eb59d910a8c343884b08f2ba88e9",
-    "X-AYLIEN-NewsAPI-Application-Key": "8321eb59d910a8c343884b08f2ba88e9",
-  },
-};
-
-axios
-  .request(options)
-  .then(function (response) {
-    console.log(response.data);
-  })
-  .catch(function (error) {
-    console.error(error);
   });
+  console.log(resp);
+})();
