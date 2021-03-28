@@ -19,7 +19,9 @@ export default function App() {
         >
           Learn React
         </a>
-        <p>add some contet</p>
+        <p>Batman had Alfred to assist him and now you can too! Alfred is here to give you a summary of your lectures.
+           With the increase of online classrooms, he is here to improve your learning experience. Upload your video below
+           and leave the rest to Alfred! </p>
       </header>
 
       <Summary />
