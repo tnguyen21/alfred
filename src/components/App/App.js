@@ -3,6 +3,7 @@ import "./App.css";
 
 import Summary from "../Summary/Summary";
 import UserInput from "../UserInput/UserInput";
+import Output from "../Output/Output";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
 
       <Summary />
       <UserInput />
+      <Output />
     </div>
   );
 }
