@@ -12,11 +12,7 @@ const uppy = new Uppy({
 });
 
 uppy.on("complete", (result) => {
-  const url = result.successful[0].uploadURL;
-  // store.dispatch({
-  //   type: "SET_USER_AVATAR_URL",
-  //   payload: { url: url },
-  // });
+  console.log("Upload successful!", result.successful);
 });
 
 export default function UserInput() {
