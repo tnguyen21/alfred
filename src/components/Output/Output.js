@@ -10,8 +10,12 @@ export default function Output() {
     <>
       <h1>Output</h1>
       <p>Here's an example </p>
-      document.write (file_name);
-      document.write (transcript);
+      <p>File name is :
+        document.write(file_name)
+      </p>
+      <p>Original Transcribed text:
+        document.write(transcript)
+      </p>
     </>
   );
 }
